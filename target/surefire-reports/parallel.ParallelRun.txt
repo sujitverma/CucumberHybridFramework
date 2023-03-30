@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: parallel.ParallelRun
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 18.11 s <<< FAILURE! - in parallel.ParallelRun
+runScenario(parallel.ParallelRun)  Time elapsed: 9.738 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+runScenario(parallel.ParallelRun)  Time elapsed: 9.784 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+
+runScenario(parallel.ParallelRun)  Time elapsed: 9.784 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+

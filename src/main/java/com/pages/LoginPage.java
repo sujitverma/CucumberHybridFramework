@@ -2,50 +2,62 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 
 	private WebDriver driver;
 
-	// 1. By Locators: OR
-	private By emailId = By.id("email");
-	private By password = By.id("passwd");
-	private By signInButton = By.id("SubmitLogin");
-	private By forgotPwdLink = By.linkText("Forgot your password?111");
+	// Locators
+	private By emailInputLocator = By.name("email");
+	private By passwordInputLocator = By.name("password");
+	private By loginButtonLocator = By.xpath("//input[@type='submit']");
+	private By forgottenPasswordLinkLocator = By.linkText("Forgotten Password");
+	private By logoutLinkLocator = By.linkText("Logout");
 
-	// 2. Constructor of the page class:
+
+	// Constructor
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	// 3. page actions: features(behavior) of the page the form of methods:
-
-	public String getLoginPageTitle() {
-		return driver.getTitle();
+	// Methods
+	public void enterEmail(String email) {
+		WebElement emailInput = driver.findElement(emailInputLocator);
+		emailInput.sendKeys(email);
 	}
 
-	public boolean isForgotPwdLinkExist() {
-		return driver.findElement(forgotPwdLink).isDisplayed();
+	public void enterPassword(String password) {
+		WebElement passwordInput = driver.findElement(passwordInputLocator);
+		passwordInput.sendKeys(password);
 	}
 
-	public void enterUserName(String username) {
-		driver.findElement(emailId).sendKeys(username);
+	public void clickLoginButton() {
+		WebElement loginButton = driver.findElement(loginButtonLocator);
+		loginButton.click();
 	}
 
-	public void enterPassword(String pwd) {
-		driver.findElement(password).sendKeys(pwd);
+	public void clickForgottenPasswordLink() {
+		WebElement forgottenPasswordLink = driver.findElement(forgottenPasswordLinkLocator);
+		forgottenPasswordLink.click();
 	}
 
-	public void clickOnLogin() {
-		driver.findElement(signInButton).click();
+	public boolean checkForgotPwdLink(){
+		return driver.findElement(forgottenPasswordLinkLocator).isDisplayed();
 	}
 
-	public AccountsPage doLogin(String un, String pwd) {
-		System.out.println("login with: " + un + " and " + pwd);
-		driver.findElement(emailId).sendKeys(un);
-		driver.findElement(password).sendKeys(pwd);
-		driver.findElement(signInButton).click();
-		return new AccountsPage(driver);
+	public boolean checkLogoutLink(){
+		return driver.findElement(logoutLinkLocator).isDisplayed();
 	}
 
+	public void login(String email, String password) {
+		enterEmail(email);
+		enterPassword(password);
+		clickLoginButton();
+	}
+
+	public String getForgotPwdPageUrl(){
+		String forgotPwdPageUrl = driver.getCurrentUrl();
+		return forgotPwdPageUrl;
+	}
 }

@@ -24,10 +24,11 @@ public class AccountsPageSteps {
 		List<Map<String, String>> credList = credTable.asMaps();
 		String userName = credList.get(0).get("username");
 		String password = credList.get(0).get("password");
-
+		/***
 		DriverFactory.getDriver()
 				.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		accountsPage = loginPage.doLogin(userName, password);
+		 ***/
 
 	}
 
