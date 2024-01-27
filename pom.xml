@@ -97,6 +97,19 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.22</version>
 		</dependency>
+		<!--Allure Cucumber Dependency-->
+	    <dependency>
+	      <groupId>io.qameta.allure</groupId>
+	      <artifactId>allure-cucumber7-jvm</artifactId>
+	      <scope>test</scope>
+	    </dependency>
+	 
+	    <!--Allure Reporting Dependency-->
+	    <dependency>
+	      <groupId>io.qameta.allure</groupId>
+	      <artifactId>allure-testng</artifactId>
+	      <scope>test</scope>
+	    </dependency>
 	</dependencies>
 
 	<build>
@@ -126,7 +139,14 @@
 					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
 			</plugin>
-
+			<plugin>
+		        <groupId>io.qameta.allure</groupId>
+		        <artifactId>allure-maven</artifactId>
+		        <version>${allure.maven}</version>
+		        <configuration>
+		          <reportVersion>${allure.maven}</reportVersion>
+		        </configuration>
+		      </plugin>
 		</plugins>
 	</build>
 </project>
