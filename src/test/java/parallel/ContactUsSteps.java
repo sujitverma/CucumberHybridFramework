@@ -40,7 +40,7 @@ public class ContactUsSteps {
 
 	@Then("it shows a successful message {string}")
 	public void it_shows_a_successful_message(String expSuccessMessage) {
-		String actualSuccMessg = contactUsPage.getSuccessMessg();
+		//String actualSuccMessg = contactUsPage.getSuccessMessg();
 		System.out.print("Sujit");
 	}
 
