@@ -20,8 +20,24 @@
 		<cucumber.version>6.9.0</cucumber.version>
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
+		<allure.junit4.version>2.25.0</allure.junit4.version>
+	    <aspectj.version>1.9.21</aspectj.version>
+	    <allure.version>2.25.0</allure.version>
+	    <allure.maven>2.12.0</allure.maven>
 	</properties>
 
+	<dependencyManagement>
+	    <dependencies>
+	      <dependency>
+	        <groupId>io.qameta.allure</groupId>
+	        <artifactId>allure-bom</artifactId>
+	        <version>${allure.version}</version>
+	        <type>pom</type>
+	        <scope>import</scope>
+	      </dependency>
+	    </dependencies>
+	  </dependencyManagement>
+	
 	<dependencies>
 
 		<dependency>
