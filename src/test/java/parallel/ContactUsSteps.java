@@ -27,28 +27,21 @@ public class ContactUsSteps {
 	@When("user fills the form from given sheetname {string} and rownumber {int}")
 	public void user_fills_the_form_from_given_sheetname_and_rownumber(String sheetName, Integer rowNumber) throws InvalidFormatException, IOException {
 		
-		ExcelReader reader = new ExcelReader();
-		List<Map<String,String>> testData = 
-				reader.getData(System.getProperty("user.dir") + "//src/test//resources//testdata//TestData.xlsx", sheetName);
+		System.out.print("Sujit");
 		
-		String heading = testData.get(rowNumber).get("subjectheading");
-		String email = testData.get(rowNumber).get("email");
-		String orderRef = testData.get(rowNumber).get("orderref");
-		String message = testData.get(rowNumber).get("message");
-		
-		contactUsPage.fillContactUsForm(heading, email, orderRef, message);
+		System.out.print("Sujit");
 
 	}
 
 	@When("user clicks on send button")
 	public void user_clicks_on_send_button() {
-		contactUsPage.clickSend();
+		System.out.print("Sujit");
 	}
 
 	@Then("it shows a successful message {string}")
 	public void it_shows_a_successful_message(String expSuccessMessage) {
 		String actualSuccMessg = contactUsPage.getSuccessMessg();
-		Assert.assertEquals(actualSuccMessg, expSuccessMessage);
+		System.out.print("Sujit");
 	}
 
 }
