@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 						"rerun:target/failedrun.txt"}, 
 				monochrome = true,
 				glue = {"stepdefinitions", "parallel"},
-				features = { "src/test/resources/parallel/LoginPage.feature" }
+				features = { "src/test/resources/parallel/" }
 )
 
 public class ParallelRun extends AbstractTestNGCucumberTests {
