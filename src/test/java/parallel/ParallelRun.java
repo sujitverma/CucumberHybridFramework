@@ -8,6 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(plugin = {"pretty",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 			                        "html:target/cucumber-reports",
+			                        "json:target/cucumber-reports/Cucumber.json",
+			                        "junit:target/cucumber-reports/Cucumber.xml",
 						"timeline:target/test-output/output-thread/",
 						"rerun:target/failedrun.txt"}, 
 				monochrome = true,
