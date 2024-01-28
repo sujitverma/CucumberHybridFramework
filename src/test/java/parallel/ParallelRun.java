@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(plugin = {"pretty",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 			                        "html:target/cucumber-reports/index.html",
 			                        "json:target/cucumber-reports/Cucumber.json",
 			                        "junit:target/cucumber-reports/Cucumber.xml",
@@ -18,6 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 )
 
 public class ParallelRun extends AbstractTestNGCucumberTests {
+	
 	@Override
 	@DataProvider(parallel = true)
 	public Object[][] scenarios() {
