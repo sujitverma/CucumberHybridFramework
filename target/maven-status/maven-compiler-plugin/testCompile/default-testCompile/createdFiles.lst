@@ -1,7 +1,0 @@
-parallel\ContactUsSteps.class
-parallel\AccountsPageSteps.class
-testrunners\MyTestRunner.class
-parallel\LoginPageSteps.class
-parallel\FailedRunner.class
-parallel\ParallelRun.class
-parallel\ApplicationHooks.class
