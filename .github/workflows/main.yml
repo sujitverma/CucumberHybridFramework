@@ -33,6 +33,12 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
+    - name: Deploy Extent Report
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: ./target/test-output/SparkReport
+
     - name: Load test report history
       uses: actions/checkout@v3
       if: always()
