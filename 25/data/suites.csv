@@ -1,0 +1,21 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:34 GMT 2024","6829","","Login Functionality for OpenCart E-commerce Website","","Unsuccessful login with invalid or empty credentials","","Unsuccessful login with invalid or empty credentials","  As a user of the OpenCart website
+  I want to be able to log in with my account
+  So that I can access my account-related features and manage my orders"
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:32 GMT 2024","4445","","Contact Us Feature","","Contact Us scenario with different set of data","","Contact Us scenario with different set of data",""
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:32 GMT 2024","4506","","Contact Us Feature","","Contact Us scenario with different set of data","","Contact Us scenario with different set of data",""
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:31 GMT 2024","3901","","Account Page Feature","","Accounts section count","","Accounts section count",""
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:31 GMT 2024","4032","","Account Page Feature","","Accounts page title","","Accounts page title",""
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:34 GMT 2024","6965","","Login Functionality for OpenCart E-commerce Website","","Unsuccessful login with invalid or empty credentials","","Unsuccessful login with invalid or empty credentials","  As a user of the OpenCart website
+  I want to be able to log in with my account
+  So that I can access my account-related features and manage my orders"
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:34 GMT 2024","6839","","Login Functionality for OpenCart E-commerce Website","","Unsuccessful login with invalid or empty credentials","","Unsuccessful login with invalid or empty credentials","  As a user of the OpenCart website
+  I want to be able to log in with my account
+  So that I can access my account-related features and manage my orders"
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:35 GMT 2024","7393","","Login Functionality for OpenCart E-commerce Website","","Successful login with valid credentials","","Successful login with valid credentials","  As a user of the OpenCart website
+  I want to be able to log in with my account
+  So that I can access my account-related features and manage my orders"
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:32 GMT 2024","4461","","Contact Us Feature","","Contact Us scenario with different set of data","","Contact Us scenario with different set of data",""
+"passed","Fri Feb 02 19:13:27 GMT 2024","Fri Feb 02 19:13:34 GMT 2024","6513","","Login Functionality for OpenCart E-commerce Website","","Navigating to the forgotten password page","","Navigating to the forgotten password page","  As a user of the OpenCart website
+  I want to be able to log in with my account
+  So that I can access my account-related features and manage my orders"
