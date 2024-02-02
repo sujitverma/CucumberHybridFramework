@@ -67,7 +67,7 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.event.pull_request.head.sha }}
-          target_url: simple-elf.github.io/github-allure-history/${{ github.run_number }}
+          target_url: https://sujitverma.github.io/github-allure-history/${{ github.run_number }}
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
