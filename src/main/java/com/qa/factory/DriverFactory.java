@@ -31,6 +31,7 @@ public class DriverFactory {
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--ignore-ssl-errors=yes");
 			options.addArguments("--ignore-certificate-errors");
+			options.addArguments("--headless=new");
 			tlDriver.set(new ChromeDriver(options));
 		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
