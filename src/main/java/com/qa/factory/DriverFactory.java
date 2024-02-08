@@ -34,8 +34,8 @@ public class DriverFactory {
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 	        options.addArguments("--start-maximized");
-	        //tlDriver.set(new RemoteWebDriver(new URL(remote_url), options));
-	        tlDriver.set(new ChromeDriver(options));
+	        tlDriver.set(new RemoteWebDriver(new URL(remote_url), options));
+	        //tlDriver.set(new ChromeDriver(options));
 	        System.out.println("Browser Started : Chrome");
 			/***
 			ChromeOptions options = new ChromeOptions();
