@@ -12,8 +12,8 @@ on:
 jobs:
   build:
 
-    #runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    #runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
@@ -23,8 +23,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    #- name: Docker Setup
-    #  run: docker --version
+    - name: Docker Setup
+      run: docker --version
       
     #- name: Start Docker
     #  run: docker-compose -f docker-compose-v3.yml up -d
