@@ -33,18 +33,13 @@ public class DriverFactory {
 
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--start-maximized");
-	        //tlDriver.set(new RemoteWebDriver(new URL(remote_url), options));
-	        tlDriver.set(new ChromeDriver(options));
-	        System.out.println("Browser Started : Chrome");
-			/***
-			ChromeOptions options = new ChromeOptions();
+	       		options.addArguments("--start-maximized");
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--ignore-ssl-errors=yes");
 			options.addArguments("--ignore-certificate-errors");
 			options.addArguments("--headless=new");
 			tlDriver.set(new ChromeDriver(options));
-			***/
+			//tlDriver.set(new RemoteWebDriver(new URL(remote_url), options));
 		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());
